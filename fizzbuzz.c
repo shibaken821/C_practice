@@ -9,10 +9,12 @@ int main(void){
 	printf("いつまで佩うか方を秘薦してください\n");
 	scanf_s("%d",&a);
 
-	for (i = 1; i <= a; i++){
-		if (i % 3 == 0)
+	for (i = 0; i <= a; i++){
+		if (i == 0)
+			printf("%d\n", i);
+		else if (i % 3 == 0 && i % 5 != 0)
 			printf("fizz\n");
-		else if (i % 5 == 0)
+		else if (i % 5 == 0 && i % 3 != 0)
 			printf("buzz\n");
 		else if (i % 3 == 0 && i % 5 == 0)
 			printf("fizzbuzz\n");
