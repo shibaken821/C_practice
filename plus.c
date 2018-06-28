@@ -7,20 +7,20 @@ int main(void){
 	//int i;
 	int x , y , z , i;
 
-	printf("Please \n");
+	printf("Please enter 3 numbers\n");
 	
-	printf("整数１");
+	printf("number1:");
 	scanf_s("%d\n",&x);
 
-	printf("整数２");
+	printf("number2:");
 	scanf_s("%d\n",&y);
 
-	printf("整数３");
+	printf("number3:");
 	scanf_s("%d\n",&z);
 	
 	i = x + y + z;
 	
-	printf("それらの和は%dです\n", i);
+	printf("The sum of the three numbers is %d\n", i);
 	system("pause");
 	return 0;
 
