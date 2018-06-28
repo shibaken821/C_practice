@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(void){
-	int x;
-	int y;
-	int z;
-	int i;
+	//int x;
+	//int y;
+	//int z;
+	//int i;
+	int x , y , z , i;
 
-	printf("３つの屁方を秘薦してください\n");
+	printf("Please \n");
 	
 	printf("屁方１");
 	scanf_s("%d\n",&x);
