@@ -9,20 +9,26 @@
 	return a;
 }*/
 
-int main(void){
-	
-	//int a = function_t(3);
-	
-	int i;
-	int v[NUMBERE];
-
-	for (i = 0; i < NUMBERE; i++){
-		if (i == 0 || i == 1) {
+int fibonacci(int a){
+	int v[NUMBER];
+	int i=a;
+	for (i = 0; i < NUMBER; i++){
+		if (i == 0 || i == 1){
 			v[i] = i;
-		} else {
+		}else {
 			v[i] = v[i - 1] + v[i - 2];
 		}
-		printf("%d\n",v[i]);
+		return v[i];
+
+	}
+}
+
+	
+int main(void){
+	int time;
+	
+	for (time = 0; time < NUMBER; time++){
+		printf("%d\n", fibonacci(time));
 	}
 
 	system("pause");
