@@ -12,15 +12,13 @@
 int fibonacci(int a){
 	int v[NUMBER];
 	int i=a;
-	for (i = 0; i < NUMBER; i++){
-		if (i == 0 || i == 1){
-			v[i] = i;
-		}else {
-			v[i] = v[i - 1] + v[i - 2];
-		}
-		return v[i];
-
+	if (i == 0 || i == 1){
+		v[i] = i;
+	}else{
+		v[i] = v[i - 1] + v[i - 2];
 	}
+	return v[i];
+
 }
 
 	
