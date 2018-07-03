@@ -3,30 +3,29 @@
 
 #define NUMBER 40
 
-/*int function_t(int value) {
+/*int function_t(int value) { 
 	int a;
 
 	return a;
 }*/
 
-int fibonacci(int a){
+int fibonacci(int a){	//What's 'a' ? Please add correct name.
 	int v[NUMBER];
-	int i=a;
-	if (i == 0 || i == 1){
-		v[i] = i;
-	}else{
-		v[i] = v[i - 1] + v[i - 2];
+	//int i = a;	//Dont need it. No mean.
+	if (a == 0 || a == 1) {
+		v[a] = a;
+	} else {
+		v[a] = v[a - 1] + v[a - 2];
 	}
-	return v[i];
-
+	return v[a];
 }
 
 	
 int main(void){
-	int time;
+	//int time;
 	
-	for (time = 0; time < NUMBER; time++){
-		printf("%d\n", fibonacci(time));
+	for (int time = 0; time < NUMBER; time++){
+		printf("%d\n", fibonacci(time));	//Please research "Stack Memory".
 	}
 
 	system("pause");
