@@ -1,33 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-#define NUMBER 40
-
-/*int function_t(int value) { 
-	int a;
-
-	return a;
-}*/
-
-int fibonacci(int a){	//What's 'a' ? Please add correct name.
-	int v[NUMBER];
-	//int i = a;	//Dont need it. No mean.
-	if (a == 0 || a == 1) {
-		v[a] = a;
-	} else {
-		v[a] = v[a - 1] + v[a - 2];
+int fibonacci_term(int index) {
+	int term[index + 1];	//To save memory.
+	for (int time = 0 ; time < index + 1; time++) {
+		if(time == 0 || time == 1) {
+			term[time] = 1;
+		} else {
+			term[time] = term[time - 1] + term[time - 2];
+		}
 	}
-	return v[a];
+	return term[index];
 }
 
-	
 int main(void){
-	//int time;
 	
-	for (int time = 0; time < NUMBER; time++){
-		printf("%d\n", fibonacci(time));	//Please research "Stack Memory".
-	}
+	printf("answer:%d\n",fibonacci_term(20));
 
-	system("pause");
 	return 0;
 }
